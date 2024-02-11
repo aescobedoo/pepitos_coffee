@@ -164,7 +164,6 @@ main h1 {
 
 .col_B2 img {
   position: relative;
-  transform: rotate(90deg);
   height: 210px;
   right: 0px;
 }
