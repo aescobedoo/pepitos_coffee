@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bebidas Frías | Pepito's Coffee</title>
+  <link rel="stylesheet" href="../styles/styles_ppc_bebidas.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html"><img class="logo" src="../styles/photos/pepitoslogo.png" alt="logo of the coffee shop"/></a>
+      <img src="../styles/photos/23.png" onclick="togglemenu()"/>
+    </header>
+    <div class="menu-active" id="menuActive">
+      <div class="screen-cover" id="screenCover"></div>
+      <nav id="menuList">
+        <ul>
+          <li><a href="index.html" target="_blank">Inicio</a></li>
+          <li>Bebidas
+            <ul>
+              <li><a href="bebidasCalientes.html" target="_blank">Calientes</li></a>
+              <li>Frías</li>
+            </ul>
+          </li>
+          <li>Alimentos
+            <ul>
+              <li><a href="snacks.html" target="_blank">Snacks</a></li>
+              <li><a href="" target="_blank">Crepas Dulces</a></li>
+              <li><a href="" target="_blank">Crepas Saladas</a></li>
+              <li><a href="" target="_blank">Waffles</a></li>
+            </ul>
+          </li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+      <main>
+        <h1>Bebidas Frías</h1>
+        <div class="Menu">
+          <div class="Table">
+            <div class="Paragraph">
+              <p>¡Tip! Si tienes alguna duda da click en el nombre de la bebida.</p>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Bebida</th>
+                  <th>Gr (500ml)</th>
+                  <th>Ch (355ml)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupCapuccino')">Capuccino/Chocolate Helado</td>
+                  <td class="price">55$</td>
+                  <td class="price">50$</td>
+                </tr>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupCapuccinoF')"><p>Capuccino con sabor Helado</p><p>(amaretto, caramelo, chocolate, coco, vainilla, avellana, cajeta)</p></td>
+                  <td class="price">52$</td>
+                  <td class="price">50$</td>
+                </tr>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupFracc')">Frapuccino</td>
+                  <td class="price">65$</td>
+                  <td class="price">60$</td>
+                </tr>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupFraccF')">Frapuccino Sabores<p>(amaretto, caramelo, chocolate, coco, vainilla, avellana, cajeta)</p></td>
+                  <td class="price">68$</td>
+                  <td class="price">65$</td>
+                </tr>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupFrapE')">Frapé Especialidades<p>(oreo, mazapán, chokis, moka y chocoreta.)</p></td>
+                  <td class="price">73$</td>
+                  <td class="price">68$</td>
+                </tr>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupFraY')">Frapé Yoghurt<p>(fresa, cereza y maracuyá)</p></td>
+                  <td class="price">70$</td>
+                  <td class="price">68$</td>
+                </tr>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupFraT')">Frapé Tisana<p>(mora, maracuyá y Sueño de manzana)</p></td>
+                  <td class="price">75$</td>
+                  <td class="price">68$</td>
+                </tr>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupSI')">Soda Italiana<p>(coco, manzana, cereza, frutas, mora, grosella)</p></td>
+                  <td class="price">50$</td>
+                  <td class="price">48$</td>
+                </tr>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupCha')">Chamoyadas<p>(mango, cereza, tamarindo, jamaica y fresa)</p></td>
+                  <td class="price">55$</td>
+                  <td class="price">50$</td>
+                </tr>
+                <tr>
+                  <td class="item" onclick="displayPopup('popupMalt')">Malteadas<p>(fresa, vainilla y chocolate.)</p></td>
+                  <td class="price">73$</td>
+                  <td class="price">68$</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="Paragraph">
+            <p>Si se desea agregar alguna de las siguientes, tendrá costo extra:</p>
+            <p>Leche deslactosada/Light: 3$</p>
+            <p>Shot extra de café: 5$</p>
+          </div>  
+        </div>
+
+        <div id="popupCapuccino" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupCapuccino')">&times;</span>
+            <p>Sumérgete en el refrescante placer de nuestro Capuchino o Chocolate Helado. Una experiencia divina que combina la suavidad del café o el chocolate con la frescura del hielo. Disfruta de la indulgencia en cada sorbo, perfecto para los días cálidos o simplemente para darte un capricho refrescante en cualquier momento del día.</p>
+          </div>
+        </div>
+
+        <div id="popupCapuccinoF" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupCapuccinoF')">&times;</span>
+            <p>La suavidad del café helado, infusionado con tus sabores favoritos, creando una experiencia única y refrescante.</p>
+          </div>
+        </div>
+
+        <div id="popupFracc" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupFracc')">&times;</span>
+            <p>Refresca tu día con nuestro Frapuccino, una delicia helada que combina la intensidad del café con la suavidad de la leche y el hielo triturado. </p>
+          </div>
+        </div>
+
+        <div id="popupFraccF" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupFraccF')">&times;</span>
+            <p>Toda la magia que ofrece el Frapuccino infusionado con el sabor de tu elección.<br/> Elige entre amaretto, chocolate, caramelo, coco, vainilla, avellana y cajeta.</p>
+          </div>
+        </div>
+
+        <div id="popupFrapE" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupFrapE')">&times;</span>
+            <p>Sumérgete en el mundo refrescante de nuestro Frapé, una bebida helada que combina la suavidad de la base láctea con hielo triturado para crear una textura cremosa y refrescante. Disponible en una variedad de sabores irresistibles, como Oreo, Mazapán, Chokis, Moka y Chocoreta.</p>
+          </div>
+        </div>
+
+        <div id="popupFraY" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupFraY')">&times;</span>
+            <p>Disfruta de la frescura y la suavidad del yogur en nuestro Frapé de Yogur. Preparado con una base de yogur cremoso y hielo triturado, esta bebida ofrece una experiencia refrescante y deliciosa. Disponible en fresa, cereza y maracuyá.</p>
+          </div>
+        </div>
+
+        <div id="popupFraT" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupFraT')">&times;</span>
+            <p>Fusión única de sabores herbales y refrescantes. Preparado con una base de té tisana y hielo triturado, esta bebida te brinda una experiencia revitalizante y deliciosa.<br/>Elige entre Mora, Maracuyá y Sueño de manzana.</p>
+          </div>
+        </div>
+
+        <div id="popupSI" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupSI')">&times;</span>
+            <p>Elaborada con agua gasificada y jarabes de frutas naturales, esta bebida efervescente es una explosión de sabores refrescantes y deliciosos:<br/>Coco, Manzana, Cereza, Frutas, Mora, Grosella.</p>
+          </div>
+        </div>
+
+        <div id="popupCha" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupCha')">&times;</span>
+            <p>Explosión de sabor que combina la frescura de la fruta con la intensidad del chamoy. Preparadas con hielo triturado y una saborizante de frutas naturales, estas bebidas te transportarán a un mundo de sabores tropicales y refrescantes.<br/>Diponible en: Mango, Cereza, Tamarindo, Jamaica y Fresa.</p>
+          </div>
+        </div>
+
+        <div id="popupMalt" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popupMalt')">&times;</span>
+            <p>Preparadas con helado cremoso y leche, estas delicias son batidas hasta obtener una consistencia suave y sedosa.<br/>Sabores: Fresa, Vainilla y Chocolate.</p>
+          </div>
+        </div>
+
+      </main>
+
+      <footer id="contacto">
+        <div class="gradient">
+          <p>
+            Nos ayudas mucho compartiendo tu opinión:<br/>
+            <a href="https://maps.app.goo.gl/7tvX34GYRUW7Ff8cA" target="_blank">Calificanos en Google Maps!</a>
+          </p>
+          <p> Sígenos en nuestras redes:</p>
+          <div class="sm">
+            <a href="https://www.instagram.com/pepitos_coffee/?hl=en" target="_blank"><img src="../styles/photos/25.png" alt="instagram logo"></a>
+            <a href="https://www.facebook.com/p/Pepitos-Coffee-100063456221739/?paipv=0&eav=AfaojVmyuKfIa_gHENMfj8MgkyDRHxwQOQonuyoaEfLmEz7Xbbuurx80-JyhdK6MG5g&_rdr" target="_blank"><img src="../styles/photos/26.png" alt="facebook logo"></a>
+          </div>
+          <p>
+            Diseñado por: Antonio Escobedo
+          </p>
+          <p>
+            Contacto: escovelas@gmail.com   
+          </p>
+        </div>
+      </footer>
+  </div>
+</body>
+<script>
+  var menuList = document.getElementById("menuList");
+  var menuActive = document.getElementById("menuActive");
+  var screenCover = document.getElementById("screenCover");
+
+  function togglemenu() {
+    if (!menuList.style.right || menuList.style.right === "-10000px") {
+      menuActive.style.zIndex = "4";
+      menuList.style.right = "0px";
+      screenCover.style.opacity = "0.7";
+    } else {
+      menuList.style.right = "-10000px";
+      menuActive.style.zIndex = "-10";
+      screenCover.style.opacity = "0";
+    }
+  }
+
+  // function togglemenuopen() {
+  //     menuActive.style.zIndex = "4";
+  //     menuList.style.right = "0px";
+  //     screenCover.style.opacity = "0.7";
+  // }
+
+  // function togglemenuclose() {
+  //     menuList.style.right = "-10000px";
+  //     menuActive.style.zIndex = "-10";
+  //     screenCover.style.opacity = "0";
+  // }
+
+  function displayPopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.display = "block";
+      popup.style.opacity = "1";
+      screenCover.style.opacity = "0.7";
+      menuActive.style.zIndex = "4";
+    }
+
+    function closePopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.display = "none";
+      popup.style.opacity = "0";
+      screenCover.style.opacity = "0";
+      menuActive.style.zIndex = "-10";
+    }
+</script>
+</html>

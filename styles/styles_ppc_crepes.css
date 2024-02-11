@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p, a, li {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Abril Fatface',serif;
+  font-size: 70px;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Abril Fatface',serif;
+}
+
+body {
+  background-color: #fbf4e5;
+  background-image: url(photos/background.png);
+  background-size: cover;
+  background-position:initial;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+header {
+  justify-content: space-between;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background-color: #C2A375;
+}
+
+header img {
+  width: 40px;
+  padding: 10px;
+  right: 50px;
+  cursor: pointer;
+}
+
+header img.logo {
+  width: 250px;
+  padding: 10px;
+  right: 50px;
+}
+
+.menu-active {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  z-index: -10;
+}
+
+.screen-cover {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0;
+  transition: opacity .3s;
+  z-index: 0;
+}
+
+nav {
+  padding-top: 70px;
+  display: flex;
+  width: 30vw;
+  z-index: 5;
+  background-color: #C2A375;
+  position: relative;
+  right: -10000px;
+  transition: right .3s;
+}
+
+nav ul {
+  text-align: left;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 15px;
+  color: #000000;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+main {
+  margin-top: 100px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.Menu {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #C2A375;
+  color: #000000;
+  border-radius: 30px;
+  margin: 50px;
+}
+
+table {
+  margin: 0 10px;
+}
+
+td, td p {
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+
+th {
+padding: 20px;
+font-family: 'Abril Fatface', serif;
+font-size: 35px;
+}
+
+.item {
+  min-width: 300px;
+  max-width: 500px;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+.price {
+  width: 50px;
+  padding: 10px;
+}
+
+footer {
+  background-image: url(photos/coffeegrains2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -75px;
+  z-index: 5;
+}
+
+.gradient {
+  background: linear-gradient(to bottom, #00000000 0%, #000000ca 65%);
+  padding: 400px 0 100px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sm img{
+  display: inline-block;
+  width: 70px;
+  filter: invert(100%);
+  margin: 0 20px;
+}
+
+.Table, .Paragraph {
+  display: block;
+  clear: both;
+}
+
+.Paragraph {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.Paragraph p {
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.popup {
+  background-color: #C2A375;
+  color: #000000;
+  position: absolute;
+  display: none;
+  top: 650px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  opacity: 0;
+  z-index: 4;
+  padding: 20px;
+}
+
+.popup p {
+  margin-top: 20px;
+}
+
+.close-btn {
+  color: #fff;
+}

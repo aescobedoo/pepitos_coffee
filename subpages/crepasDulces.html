@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crepas Dulces | Pepito's Coffee</title>
+  <link rel="stylesheet" href="../styles/styles_ppc_crepes.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html"><img class="logo" src="../styles/photos/pepitoslogo.png" alt="logo of the coffee shop"/></a>
+      <img src="../styles/photos/23.png" onclick="togglemenu()"/>
+    </header>
+    <div class="menu-active" id="menuActive">
+      <div class="screen-cover" id="screenCover" onclick="togglemenu()"></div>
+      <nav id="menuList">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>Bebidas
+            <ul>
+              <li><a href="bebidasCalientes.html" target="_blank">Calientes</li></a>
+              <li><a href="bebidasFrías.html" target="_blank">Frías</a></li>
+            </ul>
+          </li>
+          <li>Alimentos
+            <ul>
+              <li><a href="snacks.html" target="_blank">Snacks</a></li>
+              <li>Crepas Dulces</li>
+              <li><a href="" target="_blank">Crepas Saladas</a></li>
+              <li><a href="" target="_blank">Waffles</a></li>
+            </ul>
+          </li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+      <main>
+        <h1>Crepas Dulces</h1>
+        <div class="Menu">
+          <div class="Table">
+            <div class="Paragraph">
+              <p>Ingrediente extra o bola de helado: 10$</p>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Alimento</th>
+                  <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="item">Nutella con fresa o plátano</td>
+                  <td class="price">80$</td>
+                </tr>
+                <tr>
+                  <td class="item" >Cajeta con nuez</td>
+                  <td class="price">80$</td>
+                </tr>
+                <tr>
+                  <td class="item">Queso con zarzamora</td>
+                  <td class="price">80$</td>
+                </tr>
+                <tr>
+                  <td class="item">Manzana canela</td>
+                  <td class="price">85$</td>
+                </tr>
+                <tr>
+                  <td class="item">Durazno con nutella</td>
+                  <td class="price">85$</td>
+                </tr>
+                <tr>
+                  <td class="item">Oreo con philadelphia y lechera</td>
+                  <td class="price">87$</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </main>
+
+      <footer id="contacto">
+        <div class="gradient">
+          <p>
+            Nos ayudas mucho compartiendo tu opinión:<br/>
+            <a href="https://maps.app.goo.gl/7tvX34GYRUW7Ff8cA" target="_blank">Calificanos en Google Maps!</a>
+          </p>
+          <p> Sígenos en nuestras redes:</p>
+          <div class="sm">
+            <a href="https://www.instagram.com/pepitos_coffee/?hl=en" target="_blank"><img src="../styles/photos/25.png" alt="instagram logo"></a>
+            <a href="https://www.facebook.com/p/Pepitos-Coffee-100063456221739/?paipv=0&eav=AfaojVmyuKfIa_gHENMfj8MgkyDRHxwQOQonuyoaEfLmEz7Xbbuurx80-JyhdK6MG5g&_rdr" target="_blank"><img src="../styles/photos/26.png" alt="facebook logo"></a>
+          </div>
+          <p>
+            Diseñado por: Antonio Escobedo
+          </p>
+          <p>
+            Contacto: escovelas@gmail.com   
+          </p>
+        </div>
+      </footer>
+  </div>
+</body>
+<script>
+  var menuList = document.getElementById("menuList");
+  var menuActive = document.getElementById("menuActive");
+  var screenCover = document.getElementById("screenCover");
+
+  function togglemenu() {
+    if (!menuList.style.right || menuList.style.right === "-10000px") {
+      menuActive.style.zIndex = "4";
+      menuList.style.right = "0px";
+      screenCover.style.opacity = "0.7";
+    } else {
+      menuList.style.right = "-10000px";
+      menuActive.style.zIndex = "-10";
+      screenCover.style.opacity = "0";
+    }
+  }
+
+  function displayPopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.display = "block";
+      popup.style.opacity = "1";
+      screenCover.style.opacity = "0.7";
+      menuActive.style.zIndex = "4";
+    }
+
+    function closePopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.display = "none";
+      popup.style.opacity = "0";
+      screenCover.style.opacity = "0";
+      menuActive.style.zIndex = "-10";
+    }
+</script>
+</html>
