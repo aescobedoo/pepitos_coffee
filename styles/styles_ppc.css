@@ -120,6 +120,7 @@ main h1 {
   align-items: center;
   background-color: rgba(0, 0, 0, .75);
   margin-top: 55px;
+  justify-content: end;
 }
 
 .first {
@@ -158,13 +159,13 @@ main h1 {
   background-color: #C2A375;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  padding-right: 50px;
+  padding-right: 30px;
   margin-left: 10px;
 }
 
 .col_B2 img {
   position: relative;
-  width: 200px;
+  width: 150px;
   right: 0px;
 }
 
@@ -193,13 +194,13 @@ main h1 {
 
 .col2 {
   display: inline-block;
-  padding: 0 10px 0 20px;
+  padding: 0 5px 0 10px;
   color: #fff;
   text-align: center;
 }
 
 .col2 img {
-  width: 200px;
+  width: 180px;
 }
 
 .col2 p{
