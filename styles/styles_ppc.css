@@ -164,7 +164,7 @@ main h1 {
 
 .col_B2 img {
   position: relative;
-  height: 210px;
+  width: 200px;
   right: 0px;
 }
 
@@ -196,6 +196,10 @@ main h1 {
   padding: 0 10px 0 20px;
   color: #fff;
   text-align: center;
+}
+
+.col2 img {
+  width: 200px;
 }
 
 .col2 p{
