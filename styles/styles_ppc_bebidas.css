@@ -118,7 +118,8 @@ main {
   background-color: #C2A375;
   color: #000000;
   border-radius: 30px;
-  margin: 50px;
+  margin: 20px;
+  overflow: scroll;
 }
 
 table {
